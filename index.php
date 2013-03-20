@@ -3,7 +3,7 @@
 <head>
 <title>Trung Tâm Kiểm Định 2</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<base href="/~saberlily/cisr/" />
+<base href="/~<?php if (isset($_SERVER['REMOTE_USER'])) echo $_SERVER['REMOTE_USER']; else echo 'tien'; ?>/cisr/" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/new/css/reset.css" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/windows8ui/jquery-ui.css" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/new/css/clock.css" />
