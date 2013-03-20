@@ -3,7 +3,7 @@
 <head>
 <title>Trung Tâm Kiểm Định 2</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<base href="/~saberlily/new-theme/" />
+<base href="/~saberlily/cisr/" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/new/css/reset.css" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/windows8ui/jquery-ui.css" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/new/css/clock.css" />
