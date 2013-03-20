@@ -1,0 +1,3 @@
+.clock {padding: 5px;background-color: #555;color: #fff;-webkit-border-radius: 4px 4px 0 0;-moz-border-radius: 4px 4px 0 0;border-radius: 4px 4px 0 0;text-align: center;}
+.clock ul {font-weight: bold;text-shadow: 0 0px 10px rgba(255,255,255,.8);}
+.clock ul li {display: inline;}
