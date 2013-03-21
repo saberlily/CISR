@@ -512,6 +512,15 @@ div {
 	padding: 6px;
 }
 
+#leftSide .vanbanmoi .pad {
+	background-image: -webkit-linear-gradient(top,#E0E0E0 0,#fff 20%);
+	background-image: -moz-linear-gradient(top,#E0E0E0 0,#fff 20%);
+	background-image: -ms-linear-gradient(top,#E0E0E0 0,#fff 20%);
+	background-image: -o-linear-gradient(top,#E0E0E0 0,#fff 20%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#E0E0E0', EndColorStr='#fff');
+	background-image: linear-gradient(top,#E0E0E0 0,#fff 20%);
+}
+
 #contentWrapper {
 	position: relative;
     clear: both;

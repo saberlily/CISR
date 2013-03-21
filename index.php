@@ -3,7 +3,7 @@
 <head>
 <title>Trung Tâm Kiểm Định 2</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<base href="/~<?php if (isset($_SERVER['REMOTE_USER'])) echo $_SERVER['REMOTE_USER']; else echo 'tien'; ?>/cisr/" />
+<base href="/~<?php if (isset($_SERVER['REMOTE_USER'])) echo $_SERVER['REMOTE_USER']; else echo 'saberlily'; ?>/cisr/" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/new/css/reset.css" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/windows8ui/jquery-ui.css" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/new/css/tabzilla.css" />
@@ -41,6 +41,16 @@
                     <li class="rss item">
                         <a class="pngfix">RSS Feeds</a>
                     </li>
+					<li class="clock item">
+						<div>
+							<span id="Date"></span>,
+							<span id="hours">-</span>
+							<span class="point">:</span>
+							<span id="min">-</span>
+							<span class="point">:</span>
+							<span id="sec">-</span>
+						</div>
+					</li>
                 </ul>
             </div>
             <div id="newsflash-ticker-placeholder">
