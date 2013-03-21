@@ -6,17 +6,17 @@
 <base href="/~<?php if (isset($_SERVER['REMOTE_USER'])) echo $_SERVER['REMOTE_USER']; else echo 'tien'; ?>/cisr/" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/new/css/reset.css" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/windows8ui/jquery-ui.css" />
+<link type="text/css" rel="stylesheet" href="asserts/themes/new/css/tabzilla.css" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/new/css/clock.css" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/new/css/feedback.css" />
 <link type="text/css" rel="stylesheet" href="asserts/themes/new/css/style.css" />
 <script type="text/javascript" src="asserts/themes/new/js/jquery.js"></script>
 <script type="text/javascript" src="asserts/themes/new/js/jquery-ui.js"></script>
 <script type="text/javascript" src="asserts/themes/new/js/jquery.validate.js"></script>
-<script type="text/javascript" src="asserts/themes/new/js/jquery.validate.additional.js"></script>
-<script src="http://tab-slide-out.googlecode.com/files/jquery.tabSlideOut.v1.3.js"></script>
 <script type="text/javascript" src="asserts/themes/new/js/nsn.js"></script>
 </head>
 <body id="kiemdinh" class="loading">
+<a href="http://www.mozilla.org/" id="tabzilla" style="float:none;position:absolute;">mozilla</a>
 <div id="globalContainer">
 	<header>
 		<div id="globalHeader">
@@ -28,6 +28,29 @@
 			<div id="menuWrapper" class="loading">
 				<?php require('includes/layout/menu.php'); ?>
 			</div>
+            <div id="generalWrapper">
+                <div id="breadcrumb">
+                    <span>Trang Chủ</span>
+                    <span class="sep">&gt;</span>
+                    <a>Thông Tin Nội Bộ</a>
+                </div>
+                <ul id="sub-prime">
+                    <li class="sitemap item">
+                        <a class="pngfix">Site Map</a>
+                    </li>
+                    <li class="rss item">
+                        <a class="pngfix">RSS Feeds</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="newsflash-ticker-placeholder">
+                <div class="ticker-container">
+                    <div id="news-ticker">
+                        <span class="ticker-title">Tin mới nhất</span>
+                        <a class="item-1 ticker-item show">Triều Tiên đã châm ngòi cuộc Chiến tranh Thế giới thứ 3</a>
+                    </div>
+                </div>
+            </div>
 			<div id="contentWrapper" class="loading">
 				<div id="leftWrapper" class="loading">
 					<?php require('includes/layout/left_side.php'); ?>
@@ -74,22 +97,9 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-    jQuery(function($){
-        $('#feedback_flyout').tabSlideOut({
-            tabHandle: '.handle',                     //class of the element that will become your tab
-            pathToTabImage: 'http://www.building58.com/examples/images/contact_tab.gif', //path to the image for the tab //Optionally can be set using css
-            imageHeight: '122px',                     //height of tab image           //Optionally can be set using css
-            imageWidth: '40px',                       //width of tab image            //Optionally can be set using css
-            tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
-            speed: 100,                               //speed of animation
-            action: 'click',                          //options: 'click' or 'hover', action to trigger animation
-            topPos: '200px',                          //position from the top/ use if tabLocation is left or right
-            leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
-            fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
-        });
-    });
-</script>
+<script type="text/javascript" src="asserts/themes/new/js/jquery.validate.additional.js"></script>
+<script type="text/javascript" src="asserts/themes/new/js/jquery.tabSlideOut.js"></script>
+<script type="text/javascript" src="asserts/themes/new/js/tabzilla.js"></script>
 <script type="text/javascript" src="asserts/themes/new/js/custom2.js"></script>
 </body>
 </html>

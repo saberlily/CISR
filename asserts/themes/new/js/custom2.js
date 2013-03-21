@@ -39,7 +39,22 @@ jQuery(function($) {
 		$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
 		}, 1000);
 		
-	/** Others */
+	/** Feedback Flyout */
+    
+    $('#feedback_flyout').tabSlideOut({
+        tabHandle: '.handle',                     //class of the element that will become your tab
+        pathToTabImage: 'http://www.building58.com/examples/images/contact_tab.gif', //path to the image for the tab //Optionally can be set using css
+        imageHeight: '122px',                     //height of tab image           //Optionally can be set using css
+        imageWidth: '40px',                       //width of tab image            //Optionally can be set using css
+        tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
+        speed: 100,                               //speed of animation
+        action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+        topPos: '200px',                          //position from the top/ use if tabLocation is left or right
+        leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+        fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
+    });
+    
+    /** Others */
 	
 	$('#dialog').click(dialog_Click);
 	function dialog_Click(evt) {
